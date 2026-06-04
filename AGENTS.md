@@ -110,7 +110,7 @@ This is the central challenge. Every design decision should account for it.
 - [x] Project concept defined
 - [x] Tech stack and phased roadmap decided
 - [x] AGENTS.md created and pushed to GitHub
-- [ ] GitHub repo created
+- [x] GitHub repo created
 - [ ] Phase 1: local script validates the core pipeline
 
 ---
