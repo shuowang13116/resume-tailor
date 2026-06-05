@@ -130,3 +130,4 @@ This is the central challenge. Every design decision should account for it.
 - The owner is a beginner with GitHub but has basic Python scripting experience — keep explanations clear and practical
 - Code examples in Python; keep them simple and readable
 - Primary working language with the owner is **Chinese**; this file is in English for public visibility
+- A `REFERENCES.md` file exists in this repo with external projects worth studying. Fetch and read it when the user refers to any of those projects by name (e.g. "Li Xiaolai's project", "李笑来", "no-one-did-it").
