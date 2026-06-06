@@ -80,7 +80,10 @@ Current task:
 | Done | Add Brooks-inspired Fred working mode | Fred | Recorded in `AI_CREW.md` |
 | Done | Add project plan source of truth | Fred | Recorded in `PROJECT_PLAN.md` |
 | Done | Add reference architecture learning file | Fred | Recorded in `ARCHITECTURE_LEARNED_FROM_REFERENCE.md` |
-| In Progress | Establish Yonghao working mode | Owner + Yonghao | Use structured recruiting prompt |
+| Done | Establish Yonghao working mode | Owner + Yonghao + Fred | Recorded in `AI_CREW.md` |
+| Done | Establish Charlie working mode | Owner + Charlie + Fred | Recorded in `AI_CREW.md` |
+| Done | Establish Ray working mode | Owner + Ray + Fred | Recorded in `AI_CREW.md` |
+| Done | Establish Xiaolai - Workflow Reviewer boundary | Owner + Xiaolai + Fred | Xiaolai reviews and recommends; Fred owns file edits |
 | Pending | Define Phase 1 MVP workflow | Yonghao | Product output returns to Fred |
 | Pending | Review MVP risks | Ray | Especially fabrication and scope creep |
 | Pending | Translate MVP into engineering tasks | Fred | Create implementation plan |
@@ -98,6 +101,7 @@ Current task:
 | 2026-06-07 | Define product MVP before building Python skeleton | Avoids implementing the wrong workflow too early |
 | 2026-06-07 | Create `PROJECT_PLAN.md` as the current progress source of truth | Avoids repeating current phase, goals, and tasks in every prompt |
 | 2026-06-07 | Create `ARCHITECTURE_LEARNED_FROM_REFERENCE.md` | Makes reference-project learning explicit and reusable |
+| 2026-06-07 | Define Xiaolai as Workflow Reviewer, not file editor | Keeps reviewer critique separate from Fred's integration and Git ownership |
 
 ---
 
