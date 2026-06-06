@@ -2,7 +2,7 @@
 
 > This file is the persistent memory for this project.
 > At the start of every new conversation, read this file before doing anything else.
-> Last updated: 2026-06-05
+> Last updated: 2026-06-07
 
 ---
 
@@ -70,6 +70,22 @@ This is the central challenge. Every design decision should account for it.
 
 ---
 
+## Human + AI Crew Workflow
+
+The project owner is the CEO / final decision maker. Codex acts as Fred, the Chief Architect.
+
+Default collaboration flow:
+
+1. Discuss first when the owner is exploring ideas.
+2. Only write project files when the owner agrees that an idea should enter the project.
+3. After each file change, Fred reports which files were added or modified.
+4. Important working-session outputs should be committed to Git after owner approval.
+5. Git commits are the backup checkpoints; GitHub pushes are the remote backup checkpoints.
+
+The manual + semi-automated agent team is defined in `AI_CREW.md`.
+
+---
+
 ## Tech Stack & Roadmap
 
 ### Phase 1 — Current: Validate core logic locally
@@ -111,15 +127,16 @@ This is the central challenge. Every design decision should account for it.
 - [x] Tech stack and phased roadmap decided
 - [x] AGENTS.md created and pushed to GitHub
 - [x] GitHub repo created
+- [x] Manual + semi-automated AI crew workflow defined in `AI_CREW.md`
 - [ ] Phase 1: local script validates the core pipeline
 
 ---
 
 ## Open Questions / Next Steps
 
-1. Create the GitHub repo (`resume-tailor`) and push this file
-2. Set up the Python project skeleton
-3. Build the first feature: parse an uploaded resume and extract STAR entries
+1. Set up the Python project skeleton
+2. Build the first feature: parse an uploaded resume and extract STAR entries
+3. Practice the manual agent workflow: Fred → Yonghao → Charlie → Ray → Fred
 
 ---
 
