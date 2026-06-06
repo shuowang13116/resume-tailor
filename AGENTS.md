@@ -84,6 +84,10 @@ Default collaboration flow:
 
 The manual + semi-automated agent team is defined in `AI_CREW.md`.
 
+Current objectives, task breakdown, and decision status are tracked in `PROJECT_PLAN.md`.
+
+Architecture lessons adapted from reference projects are tracked in `ARCHITECTURE_LEARNED_FROM_REFERENCE.md`.
+
 ---
 
 ## Tech Stack & Roadmap
@@ -143,6 +147,8 @@ The manual + semi-automated agent team is defined in `AI_CREW.md`.
 ## Notes for AI Assistants
 
 - Read this file at the start of every new conversation, then pick up from current status
+- For current goals and tasks, read `PROJECT_PLAN.md` after this file
+- For workflow, architecture, handoff, or agent-design questions, read `ARCHITECTURE_LEARNED_FROM_REFERENCE.md`
 - After each working session, remind the user to update **Current Status** and **Open Questions / Next Steps**
 - The owner is a beginner with GitHub but has basic Python scripting experience — keep explanations clear and practical
 - Code examples in Python; keep them simple and readable
