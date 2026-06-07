@@ -47,6 +47,14 @@ Instead of immediately generating a new resume, the product should analyze the o
 
 A future UI could visually mark these directly on the original resume using color, annotation, or animation. The user can click into a marked section and continue a focused conversation with Tailor to fill missing details.
 
+Phase 1 should use a lightweight local UI, preferably Streamlit, because this workflow is structured, networked, multi-turn, traceable, and decision-heavy. The UI is required to validate the product experience; it is not polish, deployment, or visual design work.
+
+The first Phase 1 result page should show three panels:
+
+1. STAR Evidence Cards.
+2. JD Evidence Map.
+3. Traceable Rewrite Draft.
+
 ---
 
 ## STAR Evidence Cards
@@ -148,5 +156,6 @@ Fred owns:
 
 ## Implementation Boundary
 
-This vision does not change the current Phase 1 constraint: validate the core logic locally before building polished UI, accounts, deployment, or agent-framework automation.
+This vision changes the current Phase 1 approach from CLI-only to lightweight local UI-first.
 
+It does not change the constraint against polished UI, accounts, deployment, persistent database, export polish, or agent-framework automation.

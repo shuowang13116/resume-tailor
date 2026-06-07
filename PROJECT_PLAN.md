@@ -12,19 +12,21 @@
 
 Phase 1: Validate the core logic locally.
 
-The project is not building a polished product yet. The goal is to prove the core pipeline with simple local scripts before adding UI, accounts, deployment, or agent frameworks.
+The project is not building a polished product yet. The goal is to validate the core workflow locally through a lightweight Streamlit UI before adding accounts, deployment, persistent database, export polish, or agent frameworks.
 
 ---
 
 ## Current Objective
 
-Define and validate the Phase 1 MVP:
+Define and validate the Phase 1 lightweight UI MVP:
 
-1. Understand the user's real resume material.
-2. Extract or organize that material into STAR-style entries.
-3. Analyze a target job description.
-4. Match relevant STAR entries to that JD.
-5. Generate resume wording that improves relevance without inventing facts.
+1. Intake resume material through paste or simple upload.
+2. Extract or organize that material into STAR evidence cards.
+3. Mark missing information and evidence status.
+4. Intake a target job description.
+5. Map JD keywords or requirements to real STAR evidence.
+6. Generate traceable resume bullet suggestions that improve relevance without inventing facts.
+7. Let the user confirm, edit, or supplement the evidence.
 
 Long-term product direction is recorded in `PRODUCT_VISION.md`. It should guide product judgment without expanding Phase 1 implementation scope.
 
@@ -34,13 +36,13 @@ Long-term product direction is recorded in `PRODUCT_VISION.md`. It should guide 
 
 Phase 1 is successful when the project can demonstrate this local workflow:
 
-1. Input candidate material.
-2. Input a target JD.
-3. Produce structured STAR entries or STAR fragments.
-4. Identify missing information and follow-up questions.
-5. Rank STAR entries for JD relevance.
+1. Input resume material in a lightweight Streamlit UI.
+2. Show STAR evidence cards with source fragments, STAR fields, missing fields, ability angles when supported, and evidence status.
+3. Let the user confirm, edit, or supplement evidence details.
+4. Input a target JD.
+5. Show a JD evidence map: supported, partially supported, missing evidence, or should not use.
 6. Produce a small set of rewritten resume bullets.
-7. Show why each rewrite is faithful to the source material.
+7. Show each bullet's source STAR card, JD requirement, fidelity note, relevance note, and warning when evidence is weak.
 
 ---
 
@@ -49,28 +51,27 @@ Phase 1 is successful when the project can demonstrate this local workflow:
 Do not build these yet:
 
 - Full web app.
-- Streamlit UI.
 - User accounts.
 - Database-backed persistence.
 - PDF or Word export polish.
 - LangChain or other agent framework automation.
 - Complex prompt chains before the MVP workflow is clear.
 - Any feature that encourages fabricated resume facts.
+- Polished visual resume annotation, graph views, animation, or production-grade design.
 
 ---
 
 ## Immediate Workstream
 
-Before writing code, define the Phase 1 MVP with the product manager agent Yonghao.
+Before writing code, review the Phase 1 lightweight UI MVP with Charlie and Ray, then let Fred translate the approved workflow into Kent-ready engineering tasks.
 
 Current task:
 
-1. Recruit / establish Yonghao's working mode.
-2. Ask Yonghao to define the Phase 1 MVP user workflow.
-3. Bring Yonghao's output back to Fred.
+1. Ask Charlie to define minimum STAR evidence-card standards and evidence states.
+2. Ask Ray to review the lightweight UI workflow for false confidence, unsupported claims, and overclaiming risk.
+3. Bring Charlie and Ray outputs back to Fred.
 4. Fred translates the approved MVP into engineering tasks.
-5. Ray reviews high-risk workflow decisions.
-6. Fred starts the Python project skeleton only after the MVP shape is approved.
+5. Kent starts the Streamlit project skeleton only after Fred provides a bounded task brief.
 
 ---
 
@@ -91,10 +92,11 @@ Current task:
 | Done | Add Kent - Implementation Engineer | Owner + Yonghao + Xiaolai + Fred | Directly added because manual agent cost is low and boundaries are clear |
 | Done | Establish Kent working mode | Owner + Kent + Fred | Kent waits for Fred task briefs and does not own product, architecture, memory, risk, or Git |
 | Done | Define Yonghao / Fred / Kent collaboration boundary | Owner + Yonghao + Fred | Product intent flows through Fred before Kent implementation |
-| Pending | Define Phase 1 MVP workflow | Yonghao | Product output returns to Fred |
-| Pending | Review MVP risks | Ray | Especially fabrication and scope creep |
+| Done | Define Phase 1 lightweight UI MVP workflow | Owner + Yonghao + Fred | Streamlit local UI is required to validate the core workflow |
+| Pending | Define evidence-card standards | Charlie | Minimum evidence, ability dimensions, evidence states |
+| Pending | Review lightweight UI MVP risks | Ray | False confidence, unsupported claims, keyword stuffing, UI authority risk |
 | Pending | Translate MVP into engineering tasks | Fred | Create implementation plan |
-| Pending | Build Python project skeleton | Fred | Only after MVP approval |
+| Pending | Build Streamlit project skeleton | Kent | Only after Fred provides bounded engineering task brief |
 
 ---
 
@@ -112,6 +114,7 @@ Current task:
 | 2026-06-07 | Create `PRODUCT_VISION.md` for product direction | Keeps product soul and long-term experience hypotheses separate from current task planning |
 | 2026-06-07 | Add Kent directly as Implementation Engineer | Owner decided manual agents are cheap enough to add when boundaries are clear; Kent owns implementation from Fred briefs, not product, architecture, memory, risk, or Git ownership |
 | 2026-06-07 | Define product-to-implementation chain | Yonghao owns product architecture, Fred owns system architecture and source-of-truth, Kent implements from Fred's bounded engineering briefs |
+| 2026-06-07 | Make Phase 1 lightweight UI-first with Streamlit | Resume tailoring is structured, networked, multi-turn, traceable, and decision-heavy; a lightweight UI is required to validate the workflow, not polish |
 
 ---
 
