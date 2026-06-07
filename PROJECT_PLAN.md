@@ -88,6 +88,7 @@ Current task:
 | Done | Establish Ray working mode | Owner + Ray + Fred | Recorded in `AI_CREW.md` |
 | Done | Establish Xiaolai - Workflow Reviewer boundary | Owner + Xiaolai + Fred | Xiaolai reviews and recommends; Fred owns file edits |
 | Done | Capture early product vision | Owner + Yonghao + Fred | Recorded in `PRODUCT_VISION.md` |
+| Done | Add Kent - Implementation Engineer | Owner + Yonghao + Xiaolai + Fred | Directly added because manual agent cost is low and boundaries are clear |
 | Pending | Define Phase 1 MVP workflow | Yonghao | Product output returns to Fred |
 | Pending | Review MVP risks | Ray | Especially fabrication and scope creep |
 | Pending | Translate MVP into engineering tasks | Fred | Create implementation plan |
@@ -107,6 +108,7 @@ Current task:
 | 2026-06-07 | Create `ARCHITECTURE_LEARNED_FROM_REFERENCE.md` | Makes reference-project learning explicit and reusable |
 | 2026-06-07 | Define Xiaolai as Workflow Reviewer, not file editor | Keeps reviewer critique separate from Fred's integration and Git ownership |
 | 2026-06-07 | Create `PRODUCT_VISION.md` for product direction | Keeps product soul and long-term experience hypotheses separate from current task planning |
+| 2026-06-07 | Add Kent directly as Implementation Engineer | Owner decided manual agents are cheap enough to add when boundaries are clear; Kent owns implementation from Fred briefs, not product, architecture, memory, risk, or Git ownership |
 
 ---
 
