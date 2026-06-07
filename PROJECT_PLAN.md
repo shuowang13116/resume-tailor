@@ -2,6 +2,7 @@
 
 > This file is the project progress source of truth.
 > Agents should read this file after `AGENTS.md` and `AI_CREW.md` when they need current goals, scope, tasks, or priorities.
+> For product direction, read `PRODUCT_VISION.md`.
 > For workflow and architecture lessons from reference projects, read `ARCHITECTURE_LEARNED_FROM_REFERENCE.md`.
 > Last updated: 2026-06-07
 
@@ -24,6 +25,8 @@ Define and validate the Phase 1 MVP:
 3. Analyze a target job description.
 4. Match relevant STAR entries to that JD.
 5. Generate resume wording that improves relevance without inventing facts.
+
+Long-term product direction is recorded in `PRODUCT_VISION.md`. It should guide product judgment without expanding Phase 1 implementation scope.
 
 ---
 
@@ -84,6 +87,7 @@ Current task:
 | Done | Establish Charlie working mode | Owner + Charlie + Fred | Recorded in `AI_CREW.md` |
 | Done | Establish Ray working mode | Owner + Ray + Fred | Recorded in `AI_CREW.md` |
 | Done | Establish Xiaolai - Workflow Reviewer boundary | Owner + Xiaolai + Fred | Xiaolai reviews and recommends; Fred owns file edits |
+| Done | Capture early product vision | Owner + Yonghao + Fred | Recorded in `PRODUCT_VISION.md` |
 | Pending | Define Phase 1 MVP workflow | Yonghao | Product output returns to Fred |
 | Pending | Review MVP risks | Ray | Especially fabrication and scope creep |
 | Pending | Translate MVP into engineering tasks | Fred | Create implementation plan |
@@ -102,6 +106,7 @@ Current task:
 | 2026-06-07 | Create `PROJECT_PLAN.md` as the current progress source of truth | Avoids repeating current phase, goals, and tasks in every prompt |
 | 2026-06-07 | Create `ARCHITECTURE_LEARNED_FROM_REFERENCE.md` | Makes reference-project learning explicit and reusable |
 | 2026-06-07 | Define Xiaolai as Workflow Reviewer, not file editor | Keeps reviewer critique separate from Fred's integration and Git ownership |
+| 2026-06-07 | Create `PRODUCT_VISION.md` for product direction | Keeps product soul and long-term experience hypotheses separate from current task planning |
 
 ---
 
@@ -112,7 +117,8 @@ For recurring project work, agents should read:
 1. `AGENTS.md` for stable project memory and principles.
 2. `AI_CREW.md` for role definitions and collaboration workflow.
 3. `PROJECT_PLAN.md` for current objective, tasks, and decisions.
-4. `ARCHITECTURE_LEARNED_FROM_REFERENCE.md` when the task involves workflow, architecture, handoff, or agent design.
+4. `PRODUCT_VISION.md` when the task involves product direction, user experience, product story, or long-term scope.
+5. `ARCHITECTURE_LEARNED_FROM_REFERENCE.md` when the task involves workflow, architecture, handoff, or agent design.
 
 ---
 
