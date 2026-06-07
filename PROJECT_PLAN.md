@@ -115,6 +115,7 @@ Current task:
 | 2026-06-07 | Add Kent directly as Implementation Engineer | Owner decided manual agents are cheap enough to add when boundaries are clear; Kent owns implementation from Fred briefs, not product, architecture, memory, risk, or Git ownership |
 | 2026-06-07 | Define product-to-implementation chain | Yonghao owns product architecture, Fred owns system architecture and source-of-truth, Kent implements from Fred's bounded engineering briefs |
 | 2026-06-07 | Make Phase 1 lightweight UI-first with Streamlit | Resume tailoring is structured, networked, multi-turn, traceable, and decision-heavy; a lightweight UI is required to validate the workflow, not polish |
+| 2026-06-07 | Adopt Resume Tailor Handoff format | Current workflow is manual agent passing plus mandatory handoff format; tool-level automatic routing waits until later |
 
 ---
 

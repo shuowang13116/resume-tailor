@@ -40,6 +40,47 @@ When the owner creates a new agent thread, do not rely only on a casual role pro
 
 The goal is not celebrity roleplay. The goal is to borrow proven professional judgment patterns and turn them into repeatable project behavior.
 
+---
+
+## Resume Tailor Handoff Format
+
+Use this format for non-trivial agent outputs. The project currently uses manual agent passing plus mandatory handoff format; tool-level automatic agent routing can wait.
+
+```text
+Resume Tailor Handoff
+
+Owner:
+Role:
+Task:
+Inputs reviewed:
+
+Main recommendation:
+What changed in thinking:
+Evidence / source used:
+Assumptions:
+Risks:
+Open questions:
+
+Truthfulness impact:
+- Does this affect resume facts? yes/no
+- Any fabrication risk?
+- Any source-traceability requirement?
+
+Recommended next owner:
+Why this owner:
+Task for next owner:
+Expected output:
+Context to pass:
+Do not do:
+
+File impact:
+- Should Fred update project files? yes/no
+- Suggested file:
+- Suggested note:
+```
+
+Fred integrates durable outputs into project files after owner approval. Other agents may recommend file changes, but they do not directly edit, stage, or commit unless their role explicitly allows it and Fred routes that task.
+
 Reusable recruiting prompt:
 
 ```text
@@ -67,6 +108,7 @@ Output:
 6. How this applies to Resume Tailor without overfitting
 7. What this agent should never do
 8. Questions for Fred
+9. Resume Tailor Handoff
 ```
 
 ---

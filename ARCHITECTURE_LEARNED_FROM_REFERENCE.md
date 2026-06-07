@@ -27,7 +27,7 @@ What matters:
 | One shared source of truth for agents | Use `AGENTS.md`, `AI_CREW.md`, and `PROJECT_PLAN.md` as required reading | Yes |
 | Explicit role boundaries | Keep Fred, Yonghao, Charlie, and Ray responsibilities non-overlapping | Yes |
 | Evidence before elegance | Resume facts must be traceable to source material before wording is polished | Yes |
-| Clean handoff between agents | Agent outputs should include assumptions, risks, and next owner | Yes |
+| Clean handoff between agents | Agent outputs should use the required Resume Tailor handoff format | Yes |
 | Research before writing | STAR library and JD analysis must happen before resume generation | Yes |
 | Red-team review | Ray reviews high-risk decisions, especially fabrication and overfitting | Yes |
 | Source ledger | Track which original resume line, user answer, or document supports each STAR entry | Soon |
@@ -51,7 +51,7 @@ These are adapted from the reference project's rule-heavy workflow, but shaped f
    - Every agent output should say what it assumes, what is uncertain, what risks exist, and who should act next.
 
 4. Small pipeline before big product.
-   - Validate the local core workflow before building UI, deployment, accounts, or agent automation.
+   - Validate the local core workflow before polished UI, deployment, accounts, or agent automation.
 
 5. Review before acceptance.
    - Important product, resume, or architecture decisions should pass through the agent best suited to critique them.
@@ -63,16 +63,39 @@ These are adapted from the reference project's rule-heavy workflow, but shaped f
 For non-trivial agent work, use this handoff format:
 
 ```text
-Output:
-1. Main recommendation
-2. Evidence or source used
-3. Assumptions
-4. Risks
-5. Open questions
-6. Suggested next owner
+Resume Tailor Handoff
+
+Owner:
+Role:
+Task:
+Inputs reviewed:
+
+Main recommendation:
+What changed in thinking:
+Evidence / source used:
+Assumptions:
+Risks:
+Open questions:
+
+Truthfulness impact:
+- Does this affect resume facts? yes/no
+- Any fabrication risk?
+- Any source-traceability requirement?
+
+Recommended next owner:
+Why this owner:
+Task for next owner:
+Expected output:
+Context to pass:
+Do not do:
+
+File impact:
+- Should Fred update project files? yes/no
+- Suggested file:
+- Suggested note:
 ```
 
-This keeps agent work portable between threads and easier for Fred to integrate.
+This keeps agent work portable between threads and easier for Fred to integrate. Resume Tailor currently uses manual agent passing plus mandatory handoff format; tool-level automatic subagent routing can wait.
 
 ---
 
@@ -116,6 +139,7 @@ Do not use this reviewer for:
 | 2026-06-07 | Add this reference-learning file | Makes Fred proactively compare this project to successful reference workflows |
 | 2026-06-07 | Require clean handoff format for important agent outputs | Reduces confusion when moving work between agent threads |
 | 2026-06-07 | Add Xiaolai - Workflow Reviewer | Lets a dedicated agent critique workflow using `no-one-did-it` without impersonating Li Xiaolai or editing files directly |
+| 2026-06-07 | Adopt Resume Tailor Handoff format | Learns handoff discipline from `no-one-did-it` before adopting tool-level automatic agent routing |
 
 ---
 
