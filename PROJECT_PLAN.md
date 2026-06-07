@@ -89,6 +89,7 @@ Current task:
 | Done | Establish Xiaolai - Workflow Reviewer boundary | Owner + Xiaolai + Fred | Xiaolai reviews and recommends; Fred owns file edits |
 | Done | Capture early product vision | Owner + Yonghao + Fred | Recorded in `PRODUCT_VISION.md` |
 | Done | Add Kent - Implementation Engineer | Owner + Yonghao + Xiaolai + Fred | Directly added because manual agent cost is low and boundaries are clear |
+| Done | Establish Kent working mode | Owner + Kent + Fred | Kent waits for Fred task briefs and does not own product, architecture, memory, risk, or Git |
 | Pending | Define Phase 1 MVP workflow | Yonghao | Product output returns to Fred |
 | Pending | Review MVP risks | Ray | Especially fabrication and scope creep |
 | Pending | Translate MVP into engineering tasks | Fred | Create implementation plan |

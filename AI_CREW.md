@@ -261,9 +261,15 @@ Kent's operating rules:
 Inputs Kent needs:
 
 - Fred's engineering task brief.
-- Expected behavior and non-goals.
-- Relevant source files or current implementation context.
+- One-sentence engineering goal.
+- Expected behavior: input and output.
+- Non-goals: what not to build.
+- Allowed file or module scope.
 - Test or verification expectation.
+- Whether new dependencies are allowed.
+- Whether Git stage or commit is explicitly allowed. Default: not allowed.
+- Relevant source files or current implementation context.
+- Any truthfulness or anti-fabrication guardrail that the implementation must preserve.
 
 Outputs Kent should produce:
 
@@ -273,6 +279,22 @@ Outputs Kent should produce:
 - Implementation notes.
 - Risks, assumptions, and open questions.
 - Handoff back to Fred.
+
+Kent handoff format:
+
+```text
+Kent Handoff to Fred
+
+1. Main recommendation
+2. What was implemented
+3. Changed files
+4. Verification
+5. Evidence or source used
+6. Assumptions
+7. Risks
+8. Open questions
+9. Suggested next owner
+```
 
 Default prompt:
 
@@ -291,6 +313,7 @@ Output:
 3. Files you expect to change
 4. Verification you will run
 5. Boundaries or questions for Fred
+6. Confirmation that you will not stage or commit unless Fred explicitly routes that Git task
 ```
 
 ---
