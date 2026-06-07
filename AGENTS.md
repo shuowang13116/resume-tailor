@@ -92,14 +92,14 @@ Architecture lessons adapted from reference projects are tracked in `ARCHITECTUR
 
 ## Tech Stack & Roadmap
 
-### Phase 1 — Current: Validate core logic locally
+### Phase 1 — Current: Validate core workflow locally with lightweight UI
 - Language: Python
-- Goal: get the pipeline working end-to-end: upload resume → extract STAR entries → rewrite based on JD
-- No UI needed yet; command line is fine
+- Goal: validate the core workflow end-to-end through a lightweight local Streamlit UI: resume intake → STAR evidence cards → missing-information prompts → JD evidence map → traceable rewrite suggestions
+- The UI is for workflow validation, not polish, deployment, or production-grade design
 - Learn basic Git along the way; push all code to GitHub from day one
 
-### Phase 2 — Add a Streamlit UI
-- Wrap the scripts in a Streamlit web interface
+### Phase 2 — Polish and deploy the Streamlit UI
+- Improve the Streamlit interface after the Phase 1 workflow is validated
 - Deploy to Streamlit Cloud (free, connects directly to GitHub; auto-deploys on push)
 - Produces a shareable URL
 
@@ -132,15 +132,17 @@ Architecture lessons adapted from reference projects are tracked in `ARCHITECTUR
 - [x] AGENTS.md created and pushed to GitHub
 - [x] GitHub repo created
 - [x] Manual + semi-automated AI crew workflow defined in `AI_CREW.md`
-- [ ] Phase 1: local script validates the core pipeline
+- [x] Phase 1 direction updated to lightweight local Streamlit UI-first
+- [ ] Phase 1: lightweight UI validates the core workflow
 
 ---
 
 ## Open Questions / Next Steps
 
-1. Set up the Python project skeleton
-2. Build the first feature: parse an uploaded resume and extract STAR entries
-3. Practice the manual agent workflow: Fred → Yonghao → Charlie → Ray → Fred
+1. Ask Charlie to define minimum STAR evidence-card standards and evidence states
+2. Ask Ray to review the lightweight UI workflow for false confidence and overclaiming risk
+3. Fred translates the approved workflow into Kent-ready engineering tasks
+4. Kent builds the Streamlit project skeleton from Fred's bounded task brief
 
 ---
 
