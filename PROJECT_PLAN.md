@@ -90,6 +90,7 @@ Current task:
 | Done | Capture early product vision | Owner + Yonghao + Fred | Recorded in `PRODUCT_VISION.md` |
 | Done | Add Kent - Implementation Engineer | Owner + Yonghao + Xiaolai + Fred | Directly added because manual agent cost is low and boundaries are clear |
 | Done | Establish Kent working mode | Owner + Kent + Fred | Kent waits for Fred task briefs and does not own product, architecture, memory, risk, or Git |
+| Done | Define Yonghao / Fred / Kent collaboration boundary | Owner + Yonghao + Fred | Product intent flows through Fred before Kent implementation |
 | Pending | Define Phase 1 MVP workflow | Yonghao | Product output returns to Fred |
 | Pending | Review MVP risks | Ray | Especially fabrication and scope creep |
 | Pending | Translate MVP into engineering tasks | Fred | Create implementation plan |
@@ -110,6 +111,7 @@ Current task:
 | 2026-06-07 | Define Xiaolai as Workflow Reviewer, not file editor | Keeps reviewer critique separate from Fred's integration and Git ownership |
 | 2026-06-07 | Create `PRODUCT_VISION.md` for product direction | Keeps product soul and long-term experience hypotheses separate from current task planning |
 | 2026-06-07 | Add Kent directly as Implementation Engineer | Owner decided manual agents are cheap enough to add when boundaries are clear; Kent owns implementation from Fred briefs, not product, architecture, memory, risk, or Git ownership |
+| 2026-06-07 | Define product-to-implementation chain | Yonghao owns product architecture, Fred owns system architecture and source-of-truth, Kent implements from Fred's bounded engineering briefs |
 
 ---
 
